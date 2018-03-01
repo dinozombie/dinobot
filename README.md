@@ -14,13 +14,15 @@ available, etc!
 
 ### Running dinobot Locally
 
-You can test your hubot by running the following, however some plugins will not
+You can test your dinobot by running the following, however some plugins will not
 behave as expected unless the [environment variables](#configuration) they rely
 upon have been set.
 
-You can start dinobot locally by running:
+You can start dinobot locally by cloning the repo and running:
 
-    % bin/hubot
+    cd dinobot
+    docker build -t dinobot .
+    docker run -i dinobot
 
 You'll see some start up output and a prompt:
 
